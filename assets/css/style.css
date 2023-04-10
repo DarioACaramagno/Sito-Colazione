@@ -1,0 +1,189 @@
+*,
+body {
+    box-sizing: border-box
+}
+
+
+
+/* #Navbar
+================================================== */
+.start-header {
+    max-width: auto;
+
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    background: #ffffff;
+}
+
+
+/*logo*/
+#Logo{
+	height: 50px;
+}
+
+/* Menu*/
+.nav-item{
+  padding: 5px 0 !important;
+	display: inline-flex;
+	position: relative;
+    transition: all 200ms linear;
+
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    align-content: space-around;
+    float: right;
+    margin: -13px;
+
+}
+
+
+li{
+    color: white;
+    width: auto;
+    margin: 10px;
+    float: right;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+
+
+
+
+/*link*/
+a {
+    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+    text-decoration: none;
+    color: #A30000;
+}
+
+/*link hover*/
+a:hover {
+    text-decoration: none;
+    color: #400000;
+}
+
+/*testo versione mobile - hero*/
+.testo-accent {
+    color: #a30000;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: Satisfy, cursive;
+}
+
+
+/*titolo*/
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+/*mio*/
+p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    width: 300px;
+    margin-right: 53%;
+}
+
+
+
+/*testo desktop - hero*/
+@media(min-width:1200px) {
+.testo-accent {
+    font-size: 2.5rem;
+    color: #a30000;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: Satisfy, cursive;
+    }
+h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+}
+
+/*Immagine hero*/
+.img-fluid {
+    height: auto;
+    max-width: 100%;
+    border-radius: 100%;
+    padding: 10%;
+}
+
+
+
+/*contenuto pagina*/
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: calc(var(--bs-gutter-x)*.5);
+    padding-right: calc(var(--bs-gutter-x)*.5);
+    width: 100%
+}
+
+/*mio*/
+.Spaziatura_righe_colonna {
+    justify-content: space-between;
+    align-items: center;
+    --bs-gutter-x: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+
+/*mio - versione mobile*/
+@media(min-width:992px) {
+   
+    /*sezione - tipi di colazioni*/
+    .Struttura_layout {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+        text-align: center!important;
+    }
+
+    /*contenuto articoli*/
+    .tabella_paesi {
+        flex: 0 0 auto;
+        width: 50%;
+        margin: auto;
+    }
+
+    /*Riquadro testo paesi*/
+    .img_txt {
+        flex: 0 0 auto;
+        width: 55.33333333%
+    }
+
+}
+
+
+/**
+ * Footer Styles
+ */
+ footer {
+    position: absolute;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    padding: 1rem;
+    background-color: #A30000;
+    color: #fff;
+    text-align: center;
+  }
